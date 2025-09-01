@@ -4,8 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Get environment variables from your Docker container or .env file
-DB_USER = os.getenv("MYSQL_USER", "my-user")
-DB_PASSWORD = os.getenv("MYSQL_PASSWORD", "my-user-password")
+DB_USER = os.getenv("MYSQL_USER", "root")
+DB_PASSWORD = os.getenv("MYSQL_PASSWORD", "your-secure-password")
 DB_HOST = os.getenv("DB_HOST", "localhost")
 DB_NAME = os.getenv("MYSQL_DATABASE", "my-database")
 
